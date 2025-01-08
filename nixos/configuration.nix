@@ -57,6 +57,9 @@
   # programs.firefox.enable = true;
   programs.fish.enable = true;
 
+  # allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -79,10 +82,7 @@
     hyprpaper
     pavucontrol
     nwg-look
-  ];
-  # install some unfree packages
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "android-studio"
+    android-studio
   ];
   
 
