@@ -1,0 +1,31 @@
+{
+    "layer": "top",
+    "modules-left": [],
+    "modules-center": ["hyprland/workspaces", "hyprland/language", "clock"],
+    "modules-right": [],
+
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+	"format-icons": {
+		"1":"1",
+		"2":"2",
+		"3":"3",
+		"4":"4",
+		"5":"5"
+	},
+       "persistent-workspaces": {
+             "*": 5 // 5 workspaces by default on every monitor
+       },
+
+    "hyprland/language": {
+        "format-en": "en",
+        "format-ru": "ru",
+        //"keyboard-name": "at-translated-set-2-keyboard"
+        "keyboard-name": "cstc40-cstc40-keyboard"
+       }
+    }
+}

@@ -1,0 +1,77 @@
+{
+	"layer": "top",
+	"modules-left": ["pulseaudio"],
+	"modules-center": ["hyprland/workspaces", "clock", "hyprland/language"],
+	"modules-right": ["tray", "network"],
+	
+  "pulseaudio": {
+      "format": "{icon} {volume}% {format_source}",
+      "format-bluetooth": " {icon} {volume}% {format_source}",
+      "format-bluetooth-muted": "  {icon} {format_source}",
+      "format-muted": "  {format_source}",
+      "format-source": " {volume}%",
+      "format-source-muted": "",
+      "format-icons": {
+          "default": [
+              "",
+              "",
+              ""
+          ]
+      },
+      "on-click": "pavucontrol"
+  },
+
+  "bluetooth": {
+    "on-click": "blueman-manager"
+  },
+
+  "network": {
+      "format-wifi": "  {essid} ({signalStrength}%)",
+      "format-ethernet": " {ifname}",
+      "interval": 3,
+      "format-linked": "{ifname} (No IP) ",
+      "format": "",
+      "format-disconnected": "",
+      "tooltip-format": " {bandwidthUpBits}  {bandwidthDownBits}\n{ifname}\n{ipaddr}/{cidr}\n",
+      "tooltip-format-wifi": " {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
+      "min-length": 17,
+      "max-length": 17
+  },
+
+  "clock": {
+      "format": "{:%H:%M  %a, %b %d}",
+      "format-alt": "{%H:%M}",
+	  "tooltip": false
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": "i",
+      "2": "ii",
+      "3": "iii",
+      "4": "iv",
+      "5": "v",
+      "6": "vi",
+      "7": "vii",
+      "8": "viii",
+      "9": "ix",
+      "10": "x"
+    },
+    "active": "",
+    "sort-by-number": true,
+    "all-outputs": true,
+    "active-only": false,
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+
+  "hyprland/language": {
+	"format":"{}",
+	"format-en":"en",
+	"format-ru":"ru",
+	"keyboard-name":"cstc40-cstc40-keyboard"
+  }
+}

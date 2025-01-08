@@ -1,0 +1,20 @@
+drun-launch = true
+
+font = "/home/cruel/.fonts/MartianMono/MartianMonoNerdFont-Regular.ttf"
+font-size=10
+hint-font=false
+
+selection-color=#d4be98
+
+width=300
+height=300
+
+outline-width=0
+
+border-width=1
+border-color=#d4be98
+corner-radius = 5
+
+background-color=#282828dd
+
+anchor=center
