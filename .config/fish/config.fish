@@ -3,6 +3,8 @@ if status is-interactive
 	set fish_greeting
 	set -gx EDITOR (type -p nvim)
 	export EDITOR=nvim
+	# where hyprshot will save screenshots
+	set -gx HYPRSHOT_DIR ~/Pictures/Screenshots
 
 	set fish_color_autosuggestion white
 
