@@ -67,6 +67,7 @@
     wget
     git
     curl
+    file
     foot
     hyprpolkitagent
     tofi
@@ -80,6 +81,9 @@
     wl-clipboard
     clipse
     hyprpaper
+    hyprshot
+    hyprpicker
+    dunst
     pavucontrol
     nwg-look
     android-studio
