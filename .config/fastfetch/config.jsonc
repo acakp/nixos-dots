@@ -42,6 +42,10 @@
             "type": "packages"
         },
         {
+            "key": "{$2}{#34}󰇄 wm       ",
+            "type": "wm"
+        },
+        {
             "key": "{$2}{#34}󰇄 desktop  ",
             "type": "de"
         },
