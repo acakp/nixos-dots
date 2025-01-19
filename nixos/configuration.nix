@@ -87,6 +87,8 @@
     pavucontrol
     nwg-look
     android-studio
+    go
+    gopls #lsp for go
   ];
   
 
