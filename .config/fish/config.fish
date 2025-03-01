@@ -10,4 +10,5 @@ if status is-interactive
 
 	alias ec="sudo nvim /etc/nixos/configuration.nix"
 	alias rc="sudo nixos-rebuild switch"
+	alias lf="lfcd"
 end

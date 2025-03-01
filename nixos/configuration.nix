@@ -10,6 +10,10 @@
       ./greetd.nix
     ];
 
+
+  # Enabling nix-commands and flakes:
+  # nix.settings.experimental-features = ["nix-command" "flakes"];
+
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -73,6 +77,8 @@
     tofi
     waybar
     lf
+    chafa # img preview in terminal
+    ctpv # img preview in lf
     unzip
     brave
     vial
@@ -89,6 +95,9 @@
     android-studio
     go
     gopls #lsp for go
+    biome #linter for js
+    conda
+    openssl
   ];
   
 
