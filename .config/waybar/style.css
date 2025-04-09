@@ -1,22 +1,21 @@
 * {
     border:        none;
     border-radius: 0;
-    font-family:   MartianMono Nerd Font;
-    font-size:     12px;
+    font-family:   "Inter Variable", sans-serif;
+	font-weight:   600;
+    font-size:     14px;
+    text-shadow:   0px 1.5px 3px #202020;
     box-shadow:    none;
-    text-shadow:   none;
     transition-duration: 0s;
 }
 
 window {
-    color:      rgba(217, 216, 216, 1);
-    background: rgba(40, 40, 40, 0.70);
-	border-bottom: 1px solid rgba(80, 73, 69, 0.35);
+    /*background: rgba(0, 0, 0, 0.1);*/
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 window#waybar.solo {
-    color:      rgba(217, 216, 216, 1);
-    background: rgba(40, 40, 40, 0.9);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 #workspaces {
@@ -25,28 +24,37 @@ window#waybar.solo {
 
 #workspaces button {
     padding: 0 5px;
-	color: #a89984;
+	color: #f4f4f4;
 }
+
+#workspaces button label{
+	font-weight:   500;
+}
+
 
 #workspaces button.empty {
-	color: #7c6f64;
+	color: #000000;
+    color: rgba(255, 255, 255, 0.4);
 }
 
-#workspaces button.visible {
-	color: #e79a4e;
+#workspaces button.visible label{
+	color: #ffffff;
+	font-weight:   800;
+    text-shadow:   0px 2px 2px #131313;
 }
 
 #workspaces button.urgent {
     color: #ea6962;
 }
 
-#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-spotify, #custom-weather, #custom-mail, #language {
-    margin:     0px 6px 0px 10px;
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #language {
+    /*margin:     0px 6px 0px 10px;*/
+	margin: 0 10px;
     min-width:  25px;
-	color: #d4be98
+	color: #ffffff;
 }
 
 #clock {
     min-width:  140px;
-	color: #e79a4e
+	color: #ffffff;
 }

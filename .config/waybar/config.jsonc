@@ -1,21 +1,22 @@
 {
 	"layer": "top",
 	"modules-left": ["pulseaudio"],
-	"modules-center": ["hyprland/workspaces", "clock", "hyprland/language"],
-	"modules-right": ["tray", "network"],
+	"modules-center": ["hyprland/workspaces", "hyprland/language"],
+	"modules-right": ["tray", "network", "clock"],
 	
   "pulseaudio": {
       "format": "{icon} {volume}% {format_source}",
       "format-bluetooth": " {icon} {volume}% {format_source}",
       "format-bluetooth-muted": "  {icon} {format_source}",
       "format-muted": "  {format_source}",
-      "format-source": " {volume}%",
+      //"format-source": " {volume}%",
+      "format-source": "󰍬 {volume}%",
       "format-source-muted": "",
       "format-icons": {
           "default": [
-              "",
-              "",
-              ""
+              "󰕿",
+              "󰖀",
+              "󰕾"
           ]
       },
       "on-click": "pavucontrol"
@@ -26,21 +27,22 @@
   },
 
   "network": {
-      "format-wifi": "  {essid} ({signalStrength}%)",
+      //"format-wifi": "󰤥  {essid} ({signalStrength}%)",
+      "format-wifi": "󰤥  {signalStrength}%",
       "format-ethernet": " {ifname}",
       "interval": 3,
       "format-linked": "{ifname} (No IP) ",
       "format": "",
       "format-disconnected": "",
       "tooltip-format": " {bandwidthUpBits}  {bandwidthDownBits}\n{ifname}\n{ipaddr}/{cidr}\n",
-      "tooltip-format-wifi": " {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
-      "min-length": 17,
+      "tooltip-format-wifi": "󰤥  {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
+      "min-length": 4,
       "max-length": 17
   },
 
   "clock": {
-      "format": "{:%H:%M  %a, %b %d}",
-      "format-alt": "{%H:%M}",
+      "format": "{:%a  %b  %d  %H:%M  }",
+      "format-alt": "{:%H:%M}",
 	  "tooltip": false
   },
 
