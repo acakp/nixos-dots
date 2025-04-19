@@ -1,1 +1,2 @@
 set chafasixel
+priority cat # no text highlights, but suitable text color for white theme

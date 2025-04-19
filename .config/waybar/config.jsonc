@@ -1,5 +1,6 @@
 {
 	"layer": "top",
+	"position": "bottom",
 	"modules-left": ["pulseaudio"],
 	"modules-center": ["hyprland/workspaces", "hyprland/language"],
 	"modules-right": ["tray", "network", "clock"],

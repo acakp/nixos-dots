@@ -4,8 +4,7 @@ font = "/home/cruel/.fonts/MartianMono/MartianMonoNerdFont-Regular.ttf"
 font-size=10
 hint-font=false
 
-text-color=#000000
-selection-color=#af5fd7
+selection-color=#d4be98
 
 width=350
 height=320
@@ -13,9 +12,9 @@ height=320
 outline-width=0
 
 border-width=1
-border-color=#af5fd7
+border-color=#d4be98
 corner-radius = 5
 
-background-color=#eff1f5dd
+background-color=#282828dd
 
 anchor=center
